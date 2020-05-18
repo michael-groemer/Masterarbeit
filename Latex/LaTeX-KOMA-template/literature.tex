@@ -1,0 +1,218 @@
+%% example text content
+%% scrartcl and scrreprt starts with section, subsection, subsubsection, ...
+%% scrbook starts with part (optional), chapter, section, ...
+\chapter{Literature}
+\newpage
+
+\section{Overview}
+
+Digital Twins (DTs) are understood as virtual replicas of real processes, devices, components or systems. NASA defines DTs as "integrated multi-physics, multi-scale, probabilistic simulation of a vehicle or system that uses the best available physical models, sensor updates, fleet history, and so forth, to mirror the life of its flying twin" \cite{glaessgen2012digital}. DTs serve to improve various performance indicators by monitoring, optimization or diagnosis. Furthermore, DTs should be used to support decisions. DTs aim to support the personnel in their work tasks and to automate processes where possible. Since its conceptual introduction by Michael Grieves \cite{michael2014grieves} about 15 years ago, the concept has evolved to model not only discrete production but also continuous production processes, information processes, transport systems. Cyber-physical systems (CPS) refer to the integration of software components and physical processes. Embedded systems and networks monitor and control physical processes, usually with feedback loops where physical processes influence the calculations and vice versa \cite{lee2008cyber}. In the literature the relationships between DTs and CPS are described differently. Although these concepts are closely related, they differ in concept, core elements and application, according to Lu et al. 2020 \cite{lu2020digital}. While CPSs aim at monitoring and controlling processes, DTs aim at analysing/understanding real-time data of an object or system by means of its virtual representation and deriving conclusions and learning from the data. The "monitoring" of CPS is similar to the "analyze, learn and understand" of DTs. The control of processes and systems is part of CPS but not of DTs. According to this definition, DTs are the prerequisite for the development of CPS.
+
+\section{Digital Twin}
+
+\subsection{Introduction}
+While the terminology has changed over time, the basic concept of the
+Digital Twin model has remained fairly stable from its inception in 2002. It is
+based on the idea that a digital informational construct about a physical system
+could be created as an entity on its own. This digital information would be a “twin” of the information that was embedded within the physical system itself and be linked with that physical system through the entire lifecycle of the system. \\
+The Digital Twin concept model is shown in Figure \ref{fig:DT_battery_pack}. It contains three main parts: \\
+a) physical products in Real Space, \\
+b) virtual products in Virtual Space, and \\
+c) the connections of data and information that ties the virtual and real products together.
+
+\myfig{digital_twin_concept_battery_pack}%% filename in figures folder
+  {width=0.5\textwidth,height=0.5\textheight}%% maximum width/height, aspect ratio will be kept
+  {The digital twin concept exemplified on a battery pack in a hybrid car.}%% caption
+  {}%% optional (short) caption for table of figures
+  {fig:DT_battery_pack}%% label
+
+
+\subsection{Development}
+
+The concept of the Digital Twin dates back to a University of Michigan
+presentation to industry in 2002 for the formation of a Product Lifecycle
+Management (PLM) center. The presentation slide, as shown in Figure 3 and
+originated by Dr. Grieves, was simply called “Conceptual Ideal for PLM.”
+However, it did have all the elements of the Digital Twin: real space, virtual
+space, the link for data flow from real space to virtual space, the link for
+information flow from virtual space to real space and virtual sub-spaces. 
+
+This conceptual model was used in the first executive PLM courses at the
+University of Michigan in early 2002, where it was referred to as the Mirrored
+Spaces Model. It was referenced that way in a 2005 journal article (Grieves
+2005). In the seminal PLM book, Product Lifecycle Management: Driving the
+Next Generation of Lean Thinking, the conceptual model was referred to as the
+Information Mirroring Model (Grieves 2006).
+
+The concept was greatly expanded in Virtually Perfect: Driving Innovative
+and Lean Products through Product Lifecycle Management (Grieves 2011),
+where the concept was still referred to as the Information Mirroring Model.
+However, it is here that the term, Digital Twin, was attached to this concept by
+reference to the co-author’s way of describing this model.
+
+The Digital Twin has been adopted as a conceptual basis in the
+astronautics and aerospace area in recent years. NASA has used it in their
+technology roadmaps (Piascik, Vickers et al. 2010) and proposals for sustainable
+space exploration (Caruso, Dumbacher et al. 2010). The concept has been
+proposed for next generation fighter aircraft and NASA vehicles (Tuegel,
+Ingraffea et al. 2011, Glaessgen and Stargel 2012)1, along with a description of
+the challenges (Tuegel, Ingraffea et al. 2011) and implementation of as-builts
+(Cerrone, Hochhalter et al. 2014).
+
+\cite{grieves2016origin}
+
+
+
+
+\subsection{Definition in Scientific Literature}
+
+The term "Digital Twin" term more and more used in industry and research initiatives, however, the scientific literature does not provide a unique definition of this concept. Summarizing the information of various papers, especially \cite{negri2017review} and papers of the creator Michael Grieves an attempt of a valid definition is given here. 
+As mentioned in the Development section above, the initial conceptualization from Micahel Grieves was in the field of Product Lifecycle Management, an important adoption happened, when the Digital Twin was applied to the astronautic and
+the aerospace field with NASA as an important initiator. The most recent interpretations in the manufacturing domain and more specifically in Industry 4.0 and smart  manufacturing research also lead to the increasing number in publications which can be seen in Figure \ref{fig:publications_DT}. DT provides virtual representations of systems along their lifecycle. Optimizations and decisions making would then rely on the same data that are updated in real-time with the physical system, through synchronization enabled by sensors.
+
+The folloowing concept is taken from the paper \cite{negri2017review} 
+
+--> kürzen, nur wichtigste info, mehr auf tabellen konzentrieren und nicht doppelt development erklären \\ \\
+
+The first definition of the DT was forged by the NASA as  an integrated multi-physics, multi-scale, probabilistic simulation of a vehicle or system that uses the best available physical models, sensor updates, fleet history, etc., to mirror the life of its flying twin. It is ultra-realistic a nd may consider one or more important and interdependent vehicle systems”: this definition first appeared in the dr aft and after in the final release of the NASA Modeling, Simulation, Information Technology and Processing Roadmap in 2010 [16,17]. 
+From that moment on, aerospace researchers started referring to the said NASA roadmap as th e seminal work to define the DT (as an example [18]). As it is evident, the main scope of the original definition of the DT was to mirror the life of air vehicles with a series of integrated sub-models that reflected different aspects and vehicle systems, by consider ing stochasticity, historical data and sensor data, including in this way interactions of  the vehicle with the real world. Only in subsequent research works, published in the same year, other aspect s emerged such as the life-cycle view [19], the check on mission requirements [19,20] and the use of the DT for prognostics and diagnostics activities [21], that then remained as core characteristics of the concept in future  works. 
+In 2015 with the work by Rios and colleagues [22], the definition of DT comprised a generic “Product”, opening the way to the use of such a concept in other fields rather than only air vehicles, even though their work was s till inserted in research about aircraft structures. Initial works in other sectors appeared even before. 
+In fact, al ongside the research in the aerospace field, in 2013 the first works reporting research on DT in manufacturing sector appeared. In particular , Lee and colleagues considered it to be the virtual counterpart of production resources, and not only of the product,  setting the basis for a debate about the role of the DT in advanced manufacturing environmen ts, such as the envisioned Industry 4.0 with its core technologies, big data analytics and cloud platforms [23]. This debate continues s till today, and this work is inserted in such a stream.
+
+In this paper, several interesting tables on the development of the Digital Twin are shown, but only for the years 2010 to 2016. Since the highest activity has been in the last years, as can be seen in Figure \ref{fig:publications_DT}, the tables were brought up to date until 2020. 
+
+
+
+\subsection{Application in Industry 4.0}
+
+I ndustry 4.0 has been recognized at international level as one of the strategical responses of  the manufacturing companies to the economic crisis, to the tendency to delocalize production and to the increased market complexity [1]. The t echnological basis of Industry 4.0 roots back in the Internet of Things (IoT) [2],which proposed to embed electroni cs, software, sensors, and network connectivity into devices (i.e. "things"), in order to allow the collection and exchange of data through the internet [3].
+Thanks to the research works performed within MAYA project, it is possible to identify the main characteristics that the DT for Industry 4.0 manufacturing systems. The DT consists of a virtual representation of a producti on system that is able to run on different simulation disciplines that is characterized by the synchronization between the virtual and real system, thanks to sensed data and connected smart devices, mathematical models and real time data elaboration. This is in line with the role also suggested in the aerospace field. The topical role within  Industry 4.0 manufacturing systems is to exploit these features to forecast and optimize the behaviour of the producti on system at each life cycle phase in real time. This is fully enabled by the Industry 4.0 technologies and it is in line with the view of [50]. 
+
+
+
+\section{Cyber Physical System}
+
+\subsection{Introduction}
+
+CPS has been defined by the scientific community from different perspectives. Rajkumar [3]
+describes CPSs as “physical and engineered systems, whose operations are monitored,
+coordinated, controlled, and integrated by a computing and communicating core”. Lee [14]
+describes CPSs as “integrations of computation with physical processes”. Marwedel [15]
+describes them as “embedded systems together with their physical environment”. Gill [16]
+describes them as “physical, biological, and engineered systems whose operations are integrated,
+monitored, and/or controlled by a computational core. Components are networked at every scale.
+Computing is deeply embedded into every physical component, possibly even into materials. The
+computational core is an embedded system, usually demands real-time response, and is most often
+distributed”.
+In summary, Cyber-Physical Systems (CPSs) are complex, multi-disciplinary,
+physically-aware next generation engineered systems that integrate embedded computing
+technology (cyber part) into the physical phenomena by using transformative research
+approaches. This integration mainly includes observation, communication, and control aspects of
+the physical systems from the multi-disciplinary perspective.
+
+\subsection{Development}
+
+CPS is an emerging area that refers to the next generation engineered systems. The term CPS was
+coined at the National Science Foundation (NSF) in the United States around 2006 [8]. The CPS
+approach has been recognized as a paramount and prospective shift towards future networking and
+information technology (NIT) by the 2007 report of the President’s Council of Advisors on
+Science and Technology (PCAST). PCAST recommends the reorganization of the national
+priorities in NIT research and development (RD) and putting CPS at the top of the research
+agenda [9]. The National Science Foundation (NSF) has increasingly provided funding opportunities to the scientific community to promote transformative research on CPS [10]. A
+special interest organization has been set up in the U.S., namely Cyber-Physical Systems Virtual
+Organization (CPS-VO), to foster collaboration among CPS professionals in academia,
+government, and industry [11]. The European Union’s joint technology initiative, called
+Advanced Research and Technology for Embedded Intelligence Systems (ARTEMIS), has
+invested in research and development (RD) efforts on the next generation engineered systems
+with public-private partnership between European Nations and the industry to fulfill the vision of
+a world in which all systems, machines, and objects become smart and physically-aware, have a
+presence in the cyber-physical space, exploit the digital information and services around them, and
+communicate with each other as well as with the environment [12]. Moreover, the European
+Commission has launched a new research and innovation program, namely Horizon 2020, at the
+end of 2013 to develop new strategies for tackling societal challenges. Horizon 2020 is the biggest
+research and innovative program yet with a budget of nearly EUR 80 billion. Horizon2020 covers
+CPSs and advanced computing research and innovation [13].
+
+\cite{gunes2014survey}
+
+\section{Digital Energy Twin}
+\section{Comparison of "Digital Twin" and "Cyber Physical Systems"}
+
+\cite{tao2019digital}
+
+\myfig{comparison_DT_CPS}%% filename in figures folder
+  {width=0.7\textwidth,height=0.7\textheight}%% maximum width/height, aspect ratio will be kept
+  {Yearly publications with the phrase "Digital Twin" either in the Title, Abstract or the Keywords. The data was obtained using the platform Scopus. }%% caption
+  {}%% optional (short) caption for table of figures
+  {fig:comparison_DT_CPS}%% label
+  
+  
+
+\section{Literature Analysis}
+
+\subsection{Motivation}  
+
+
+To give a better overview about the development of publications reated to the topic "Digital Twin", an analysis of the published papers was done using the database of Scopus. 
+Information about the most important keywords and how many papers are related to these can be obtained by these graphs. 
+
+\subsection{Results}
+
+A keyword analysis was done in Scopus, the results can be seen in the Figures of the following section. The amount of publications in which the keyword was present in either the title, in the abstract or in the keyword section of the paper was determined. Even though not every paper can be captured by this way, this analysis serves to show the trend of the development and lets one make assumptions of the further development. 
+
+In Figure \ref{fig:publications_DT}, the development of publication of the past nine years can be seen. Until 2016 there was very little increment, but in the last years the number of puplished papers per year increased exponentially from 24 publications in 2016 to 759 publications in 2019. 
+
+\myfig{publications_DT}%% filename in figures folder
+  {width=0.7\textwidth,height=0.7\textheight}%% maximum width/height, aspect ratio will be kept
+  {Yearly publications with the phrase "Digital Twin" either in the Title, Abstract or the Keywords. The data was obtained using the platform Scopus. }%% caption
+  {}%% optional (short) caption for table of figures
+  {fig:publications_DT}%% label
+
+Another analysis was done for the obtained data from above, which can be seen in Figure \ref{fig:publications_DT}. The search was repeated but with 2 specific criteria, the first one being again "Digital Twin", the second one can be seen in Figure \ref{fig:DT_two_keywords}, in the legend of the graph. 
+This serves to give an overview about which topics are connected to the topic Digital Twin and how they developed. 
+
+\myfig{DT_keywords}%% filename in figures folder
+  {width=0.7\textwidth,height=0.7\textheight}%% maximum width/height, aspect ratio will be kept
+  {Publications with the phrases "Digital Twin" and the label of each graph in the title, abstract or the keywords  }%% caption
+  {}%% optional (short) caption for table of figures
+  {fig:DT_two_keywords}%% label
+  
+ 
+
+
+  
+\section{}
+One trend in model-based analysis and optimization of CPS is the increasing complexity of the systems under consideration, which is further intensified by the need for interoperability and increased efficiency requirements. Subsystems can no longer be considered separately and computer-based systems such as microprocessors, software and communication networks (the cyber part of CPS) cannot be ignored when understanding system behaviour. These developments pose new challenges to traditional modeling and simulation techniques: For the analysis and optimization of CPS, methods and tools are needed for both the cyber and the physical part.  It is necessary to combine data-driven techniques with first-principle models. In addition, recent studies have shown that co-simulation is a promising approach for the modelling and simulation of complex systems [5]. The concept consists of coupling two or more models in a co-simulation in which the data exchange between the subsystems is limited to discrete communication points. These different trends and possibilities push established methods and tools to their limits and even beyond. 
+
+ 
+Test Cite:~\cite{eigner2019definition}
+
+
+
+
+This is my text with an example Figure~\ref{fig:example} and example
+citation~\cite{StrunkWhite} or \textcite{Bringhurst1993}. And there is another
+\enquote{citation} which is located at the bottom\footcite{tagstore}.
+
+\myfig{TU_Graz_Logo}%% filename in figures folder
+  {width=0.1\textwidth,height=0.1\textheight}%% maximum width/height, aspect ratio will be kept
+  {Example figure.}%% caption
+  {}%% optional (short) caption for table of figures
+  {fig:example}%% label
+
+Now you are able to write your own document. Always keep in mind: it's
+the \emph{content} that matters, not the form. But good typography is
+able to deliver the content much better than information set with bad
+typography. This template allows you to focus on writing good content
+while the form is done by the template definitions.
+
+
+%% vim:foldmethod=expr
+%% vim:fde=getline(v\:lnum)=~'^%%%%\ .\\+'?'>1'\:'='
+%%% Local Variables: 
+%%% mode: latex
+%%% mode: auto-fill
+%%% mode: flyspell
+%%% eval: (ispell-change-dictionary "en_US")
+%%% TeX-master: "main"
+%%% End: 
